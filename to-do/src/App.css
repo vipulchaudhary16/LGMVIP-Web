@@ -142,15 +142,17 @@ h1 {
 }
 
 @media screen and (max-width: 450px) {
+    .app-heading{
+        margin-bottom: 1rem;
+    }
     .todo-app{
         padding: 1rem;
-    }
-    .todo-input{
-        /* width: 90%; */
     }
 
     .todo-button{
         margin-top: 0.5rem;
+        border-radius: 4px;
+
     }
 
     .todo-row{

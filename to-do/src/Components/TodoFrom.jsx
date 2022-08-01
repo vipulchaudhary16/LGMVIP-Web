@@ -3,12 +3,6 @@ import { React, useState, useEffect, useRef } from "react";
 export default function TodoFrom(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : "");
 
-  const inputRef = useRef(null);
-
-  useEffect(() => {
-    inputRef.current.focus();
-  });
-
   const handleChange = (e) => {
     setInput(e.target.value);
   };
@@ -33,7 +27,6 @@ export default function TodoFrom(props) {
             placeholder="Update it"
             value={input}
             onChange={handleChange}
-            ref={inputRef}
             name="text"
           />
           <button onClick={handleSubmit} className="todo-button">
@@ -48,7 +41,6 @@ export default function TodoFrom(props) {
             placeholder="Add  a Todo"
             value={input}
             onChange={handleChange}
-            ref={inputRef}
             name="text"
           />
           <button onClick={handleSubmit} className="todo-button">
