@@ -1,4 +1,4 @@
-## This repo is containing all project I did for Web Dev Programm Aug 2022
+## Web Dev Program Aug 2022 with LetsGrowMore
 
 ### Task 1 : To Do List Web App [Live Demo here](https://todo-veer.surge.sh/)
 Tech stack : 
