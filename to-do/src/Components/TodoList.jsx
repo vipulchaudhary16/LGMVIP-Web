@@ -34,7 +34,7 @@ export default function TodoList() {
 
   return (
     <div>
-      <h1 className="app-heading">Add Your Plan Here</h1>
+      <h1 className="app-heading">Add Your Todo here</h1>
       <TodoFrom onSubmit={addToDo} />
       <Todo
         todos={todos}

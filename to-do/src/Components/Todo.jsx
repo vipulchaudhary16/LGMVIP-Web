@@ -28,7 +28,7 @@ export default function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
       key={index}   
       className={todo.isComplete ? "todo-row complete" : "todo-row"}
     >
-      <div className="icons" onClick={() => completeTodo(todo.id)}>
+      <div className="icons crud__icon" onClick={() => completeTodo(todo.id)}>
       {
         todo.isComplete ? (<AiFillCheckSquare/>) : (<BiSquare/>)
       }
@@ -38,17 +38,18 @@ export default function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
         {todo.text}
       </div>
       <div className="icons">
-        <FaRegEdit
-          className="edit-icon"
+        {todo.isComplete ? (null) : (<FaRegEdit
+          className="edit-icon crud__icon"
           onClick={() =>
             setEdit({
               id: todo.id,
               value: todo.text,
             })
           }
-        />
-        <RiDeleteBin6Line
-          className="delete-icon"
+        />)}
+        
+        <RiDeleteBin6Line 
+          className="delete-icon crud__icon"
           onClick={() => removeTodo(todo.id)}
         />
       </div>
