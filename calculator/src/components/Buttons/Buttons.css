@@ -1,0 +1,38 @@
+.btn-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background: #3a7bd5;
+  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+  background: linear-gradient(to right, #3a6073, #3a7bd5);
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  margin: 6px auto;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.507);
+  border: 0px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #085f72;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn:active {
+  background-color: #48b1bf;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.clr {
+  color: #ec970e;
+}
