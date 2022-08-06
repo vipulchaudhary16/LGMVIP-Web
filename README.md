@@ -9,7 +9,7 @@ Tech stack :
 Npm packages :
 * [React icons](https://react-icons.github.io/react-icons/)
 ---
-### Task 4 : Calculator Web App [Live Demo here](calculator-veer.surge.sh)
+### Task 4 : Calculator Web App [Live Demo here](https://calculator-veer.surge.sh/)
 Tech stack : 
 * ReactJS
 * HTML
